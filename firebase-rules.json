@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        "profile": {
+          ".validate": "newData.hasChildren(['bizName'])"
+        },
+        "invoices": {
+          "$invoiceId": {
+            ".validate": "newData.hasChildren(['id','customerId','total','date'])"
+          }
+        },
+        "customers": {
+          "$customerId": {
+            ".validate": "newData.hasChildren(['id','name'])"
+          }
+        },
+        "products": {
+          "$productId": {
+            ".validate": "newData.hasChildren(['id','name','price'])"
+          }
+        },
+        "expenses": {
+          "$expenseId": {
+            ".validate": "newData.hasChildren(['id','title','amount'])"
+          }
+        }
+      }
+    }
+  }
+}
