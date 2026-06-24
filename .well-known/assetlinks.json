@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.trishab.hisabika",
+      "sha256_cert_fingerprints": [
+        "2D:B7:04:D2:9A:F0:27:98:DD:F0:AF:6E:08:51:CC:0A:F5:A5:95:49:48:F9:57:5B:1A:9B:EC:AC:09:E6:42:5F"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.trishab.hisabika",
+      "sha256_cert_fingerprints": [
+        "7B:B2:12:90:B9:C3:24:0B:EB:FC:BA:E3:82:18:4E:0B:02:25:FF:2A:87:ED:D9:B0:63:4F:A4:7F:70:74:0B:2C"
+      ]
+    }
+  }
+]
